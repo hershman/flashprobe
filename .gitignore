@@ -1,0 +1,7 @@
+.build/
+.swiftpm/
+*.xcodeproj/
+DerivedData/
+.DS_Store
+# Scan output holds drive serials and file names: never commit it.
+flashprobe-out/

@@ -1,0 +1,19 @@
+Scan of Synthetic demo data (serial DEMO-SYNTHETIC, /dev/rdiskX)
+Range 0.00 GiB–239.02 GiB, chunk 4 MiB
+Read 61188 chunks, 256.6 GB in 5h36m; read errors: 1
+
+Speed (MB/s):  min 2.0  p5 5.6  p25 8.6  median 12.4  p75 315  p95 367  max 380
+Effective throughput 13.0 MB/s; spread p95/p5 = 66.0×
+
+Histogram:
+  2–5      MB/s    719    1.2%  █
+  5–10     MB/s  20295   33.2%  █████████████
+  10–20    MB/s  19994   32.7%  █████████████
+  200–400  MB/s  20180   33.0%  █████████████
+
+Slow regions (< 177 MB/s, i.e. 50% of the p90 speed 353 MB/s): 2, covering 172.0 GB
+  0.00 GiB–111.76 GiB  28611/28611 slow  mean 8.7 MB/s  min 2.0 MB/s  3h50m spent  1 ERRORS  re-read 8.6 MB/s
+  119.21 GiB–167.64 GiB  12398/12398 slow  mean 9.1 MB/s  min 5.0 MB/s  1h34m spent  re-read 9.0 MB/s
+
+Re-reads: 256 slow chunks × 3: first read median 10.0 MB/s, re-read median 9.4 MB/s
+  Only 0% of re-reads cleared the slow threshold: the slowness is a stable property of the data stored there.
